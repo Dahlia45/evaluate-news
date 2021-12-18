@@ -40,7 +40,7 @@ npm run test
 
 
 ## Start 
-- Build 
+-  webpack prod   
 
 ```
 npm run build-prod
@@ -49,7 +49,7 @@ npm run build-prod
 ```
 npm start	
 ```
-- dev 
+-  webpack dev   
 ```
 npm run build-dev
 ```
