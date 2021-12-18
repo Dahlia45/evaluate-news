@@ -10,6 +10,12 @@ The goal of this project:
 - Service workers
 - Using APIs and creating requests to external urls
 
+<img width="1440" alt="Screen Shot 2021-12-18 at 4 41 44 AM" src="https://user-images.githubusercontent.com/92329244/146626866-21eba61f-60ee-4a13-8fea-39e128d922b6.png">
+
+<img width="1440" alt="Screen Shot 2021-12-18 at 4 41 11 AM" src="https://user-images.githubusercontent.com/92329244/146626900-f5546626-5694-40da-9a34-9c9f63db3f40.png">
+
+<img width="574" alt="Screen Shot 2021-12-18 at 4 39 13 AM" src="https://user-images.githubusercontent.com/92329244/146626911-e9e7ae20-55f6-4a06-81ff-4fd5d6594b79.png">
+
 ## Getting started
 
 `cd` into your new folder and run:
@@ -30,6 +36,8 @@ API_KEY=**************************
 ```
 npm run test
 ```
+<img width="749" alt="Screen Shot 2021-12-18 at 4 42 21 AM" src="https://user-images.githubusercontent.com/92329244/146626884-1ffb67fe-808d-44e7-b292-5ef408dcca3d.png">
+
 
 ## Start 
 - Build project
