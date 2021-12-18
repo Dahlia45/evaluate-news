@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+    background: #E08DAC;
+    p {
+        color:#153131;
+        text-decoration:none;
+        font-size:.75rem;
+
+
+    }
+    h1 {
+        font-size: 4.5rem;
+        text-transform: capitalize;
+        font-family: "fantasy";
+        text-shadow:1px 1px 2px #8a9cec, 0 0 1em #753049, 0 0 0.2em #b65f7f;
+        color: #153131;
+        text-align: center;
+      }
+      
+
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    p {
+        color:#153131;
+        text-decoration:none;
+        font-size:.75rem;
+
+
+    }
+    h1 {
+        font-size: xxx-large;
+        text-transform: capitalize;
+        font-family: "fantasy";
+        text-shadow: 1px 1px 2px #8a9cec, 0 0 1em #753049, 0 0 0.2em #b65f7f;
+        //text-shadow: 1px 1px 2px #160f16, 0 0 1em #1b101a, 0 0 0.2em #290d25;
+        color: #153131;
+        text-align: center;
+
+      }
+      h2 {
+        color:#153131;
+        font-family: "fantasy";
+        text-align: center;
+        font-size: large;
+        animation-duration: 3s;
+        animation-name: slidein;
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+              }
+            
+              to {
+                margin-left: 0%;
+                width: 100%;
+              }
+            }
+          }
+}
+

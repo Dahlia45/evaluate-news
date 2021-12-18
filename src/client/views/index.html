@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sentiment Analyzer</title>
+    </head>
+    <header>
+        <h1>
+        Sentient Analyzer
+        </h1>
+    </header>
+    <body>
+        <main>
+            <div class="container">
+            <h1>Enter a URL of the document to analyzes</h1>
+
+            <section>
+                <form class="form" onsubmit="return handleSubmit(event)">
+                    <h1 for="article-url">URL</h1>
+
+                    <input id="url" type="text" name="url" value="" placeholder="http://" />
+                    <button class="button-64"role="button" onclick="return Client.handleSubmit(event)" type="submit" id="submit" value="Submit"
+                             onsubmit="return Client.handleSubmit(event)"><span class="text">submit</span></button>
+                </form>
+            </section>
+
+            <section>
+                <h1>Form Results:</h1>
+                <h2 id="score_tag"></h2>
+                <h2 id="confidence"></h2>  
+                <h2 id="irony"></h2>
+                <h2 id="subjectivity"></h2>        
+                <h2 id="agreement"></h2>        
+
+            </section>
+         </div>
+        </main>
+
+        <div class="footer">
+            <div class="bubbles">
+                <div class="bubble" style="--size:3.984474802160719rem; --distance:9.11757707240449rem; --position:33.918634312626416%; --time:3.133145582046477s; --delay:-3.6709220693202558s;"></div>
+                <div class="bubble" style="--size:5.391266640046903rem; --distance:8.95155462631391rem; --position:62.200932171777325%; --time:2.4528188942594333s; --delay:-3.0435440838424377s;"></div>
+                <div class="bubble" style="--size:5.724281941059381rem; --distance:8.069280562131649rem; --position:52.825406573326184%; --time:2.8733783785377414s; --delay:-3.5559227899120933s;"></div>
+                <div class="bubble" style="--size:4.7068834414196425rem; --distance:8.090214699185044rem; --position:101.18545963816103%; --time:2.7264583540595795s; --delay:-3.6233409383939486s;"></div>
+                <div class="bubble" style="--size:3.4267491260154275rem; --distance:6.844990079424925rem; --position:50.18242739777351%; --time:2.2024957384702026s; --delay:-2.0910083224359166s;"></div>
+                <div class="bubble" style="--size:2.3502340394151506rem; --distance:9.253187563213098rem; --position:54.39651165320347%; --time:2.754064852875591s; --delay:-2.808169258569431s;"></div>
+                <div class="bubble" style="--size:5.398312029507656rem; --distance:7.24656531546499rem; --position:14.182616469062175%; --time:2.3182550183254835s; --delay:-3.8004767619357285s;"></div>
+                <div class="bubble" style="--size:4.626249981800719rem; --distance:9.300410086956251rem; --position:72.84390431915693%; --time:2.143511880475606s; --delay:-2.8613736119234168s;"></div>
+            </div>
+            <div class="copyright">
+                    <p>© 2021 |
+                      <a target="_blank" href="https://github.com/Dahlia45/evaluate-news">
+                        Full source code 
+                      </a></p>
+                </div>
+            </div>
+        </div>
+        <svg style="position:fixed; top:100vh">
+            <defs>
+                <filter id="blob">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+              // Use the window load event to keep the page load performant
+              window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+              })
+            }
+      </script> 
+    </body>
+</html>
