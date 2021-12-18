@@ -40,13 +40,18 @@ npm run test
 
 
 ## Start 
-- Build project
+- Build 
 
 ```
 npm run build-prod
 ```
-- Run project
+- Run 
 ```
 npm start	
 ```
+- dev 
+```
+npm run build-dev
+```
+
 
